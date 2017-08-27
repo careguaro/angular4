@@ -1,0 +1,18 @@
+version: '2'
+##  No modificar este archivo
+services:
+ app:
+    privileged: true
+    container_name: angular4-app
+    hostname: angular4-app
+    mem_limit: "2G"
+    memswap_limit: "2G"
+    cpuset: "2"
+    image: node:boron
+    ports:
+      - "4444:4200"
+    restart: always
+    tty: true
+    dns: 192.168.8.1
+    volumes:
+      - "./:/usr/src/angular4-app"
