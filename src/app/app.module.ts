@@ -5,16 +5,12 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { ServerComponent } from './server/server.component';
 import { ServersComponent } from './servers/servers.component';
-import { SearchComponent } from './search/search.component';
-import { CardComponent } from './card/card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ServerComponent,
-    ServersComponent,
-    SearchComponent,
-    CardComponent
+    ServersComponent
   ],
   imports: [
     BrowserModule,
